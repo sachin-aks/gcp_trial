@@ -9,8 +9,14 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "numpy (>=2.5.3,<3.0.0)",
-    "cvxpy (>=1.9.3,<2.0.0)"
+    "cvxpy (>=1.9.3,<2.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "typer (>=0.19.2,<1.0.0)"
 ]
+
+[project.scripts]
+weather = "gcp_trial.weather:main"
 
 [tool.poetry]
 packages = [{include = "gcp_trial", from = "src"}]
